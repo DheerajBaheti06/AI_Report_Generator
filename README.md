@@ -50,7 +50,7 @@ Customize fonts, layout, and page styles — then export polished PDFs or DOCX f
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/ai-report-generator.git
+git clone https://github.com/DheerajBaheti06/ai-report-generator.git
 cd ai-report-generator
 
 # Install dependencies
@@ -67,7 +67,17 @@ Now open 👉 **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
-### 📦 Production Build
+### ☁️ Deployment (Vercel)
+
+1. Push your code to GitHub
+2. Go to [Vercel](https://vercel.com/) and create a new project
+3. Import your repository
+4. Add your `GEMINI_API_KEY` as an environment variable in Vercel project settings
+5. Deploy!
+
+**Note**: Make sure you're using Node.js 20.x in your Vercel project settings (found in Project Settings → General → Node.js Version)
+
+### 📦 Alternative Production Build
 
 ```bash
 # Create optimized build
@@ -77,7 +87,7 @@ npm run build
 npm start
 ```
 
-Or deploy easily on **Vercel**, **Netlify**, or any Node.js host.
+Can be deployed on **Vercel**, **Netlify**, or any Node.js host.
 Just add your `GEMINI_API_KEY` in environment variables.
 
 ---
