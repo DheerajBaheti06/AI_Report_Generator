@@ -1,0 +1,5 @@
+{
+  "name": "AI Report Generator",
+  "description": "A website for creating and generating reports on any topic given by the user.",
+  "requestFramePermissions": []
+}
