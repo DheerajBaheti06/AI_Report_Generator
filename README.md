@@ -75,7 +75,10 @@ Now open 👉 **[http://localhost:3000](http://localhost:3000)**
 4. Add your `GEMINI_API_KEY` as an environment variable in Vercel project settings
 5. Deploy!
 
-**Note**: Make sure you're using Node.js 20.x in your Vercel project settings (found in Project Settings → General → Node.js Version)
+**Note**: Make sure to configure your build settings in Vercel Project Settings:
+
+- Build Command: `npm run build`
+- Output Directory: `dist`
 
 ### 📦 Alternative Production Build
 
