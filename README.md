@@ -1,39 +1,45 @@
 # 🚀 AI Report Generator 📄✨
 
 **Create, edit & export professional reports — instantly.**
-Built with **Google Gemini AI**, **React**, and **modern export engines** (PDF + DOCX).
+Built with **Google Gemini 2.5 AI** (Flash & Pro), **React**, **Vite**, and **modern export engines** (PDF + DOCX).
 
 <!-- ![AI Report Generator Demo](demo.gif) -->
 
 ---
 
-## 🧭 Overview
+## Compass Overview
 
 A sleek web app to generate AI-powered, multi-page reports with real-time editing.
 Customize fonts, layout, and page styles — then export polished PDFs or DOCX files in seconds.
+
+Now features a **High-Quality "Thinking" Mode** using Gemini 2.5 Pro for deeper, more reasoned content generation.
 
 ---
 
 ## ⚡ Key Features
 
 - 🧠 **Gemini AI-Powered Reports** — Generate full reports from just a topic prompt.
-- ✍️ **WYSIWYG Live Editor** — Edit text directly on the preview.
-- 🎨 **Pro Formatting Tools** — Fonts, colors, alignment, spacing, and themes.
-- 📏 **Auto-Fit Pages** — Smart text resizing to match target page count.
-- 📄 **Headers & Footers** — Customizable titles, dates, and page numbers.
+- 🤯 **High-Quality "Thinking" Mode** — Toggles Gemini 2.5 Pro for complex, detailed analysis.
+- 🎯 **Custom Outlines** — Provide specific main headings to guide the AI's structure.
+- ✍️ **WYSIWYG Live Editor** — Edit text, reorder blocks, and refine content directly on the preview.
+- 🎨 **Pro Formatting Tools** — Fonts, colors, alignment, spacing, and custom themes.
+- 📏 **Auto-Fit Pages** — Smart text resizing to match your target page count exactly.
+- �️ **History & Undo/Redo** — Never lose your progress with full state management.
+- �📄 **Headers & Footers** — Customizable titles, dates, page numbers, and borders.
 - 📥 **One-Click Export** — Export to PDF 📚 or DOCX 📝 instantly.
 - 🌓 **Dark & Light Mode** — Sleek UI for every environment.
-- 📱 **Responsive Design** — Works beautifully on all screen sizes.
+- 📱 **Responsive Design** — Works beautifully on desktops, tablets, and mobile phones.
 
 ---
 
 ## 🛠️ Built With
 
-- ⚛️ [React](https://react.dev/)
+- ⚛️ [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- 💎 [TypeScript](https://www.typescriptlang.org/)
 - 🤖 [@google/genai](https://www.npmjs.com/package/@google/genai)
 - 📘 [docx.js](https://docx.js.org/)
 - 🧾 [jsPDF](https://github.com/parallax/jsPDF) + [html2canvas](https://html2canvas.hertzen.com/)
-- 💅 HTML5 + CSS3 (Theming with CSS Variables)
+- 💅 **Modular Architecture** (`src/` structure with segregated components)
 
 ---
 
@@ -53,17 +59,17 @@ Customize fonts, layout, and page styles — then export polished PDFs or DOCX f
 git clone https://github.com/DheerajBaheti06/ai-report-generator.git
 cd ai-report-generator
 
-# Install dependencies
+# Install dependencies (using Vite)
 npm install
 
 # Add your Gemini API key
-echo "GEMINI_API_KEY=your_google_gemini_api_key_here" > .env.local
+echo "GEMINI_API_KEY=your_google_gemini_api_key_here" > .env
 
 # Run in development
 npm run dev
 ```
 
-Now open 👉 **[http://localhost:3000](http://localhost:3000)**
+Now open 👉 **[http://localhost:5173](http://localhost:5173)**
 
 ---
 
@@ -80,27 +86,18 @@ Now open 👉 **[http://localhost:3000](http://localhost:3000)**
 - Build Command: `npm run build`
 - Output Directory: `dist`
 
-### 📦 Alternative Production Build
-
-```bash
-# Create optimized build
-npm run build
-
-# Start production server
-npm start
-```
-
-Can be deployed on **Vercel**, **Netlify**, or any Node.js host.
-Just add your `GEMINI_API_KEY` in environment variables.
-
 ---
 
-## 💡 Usage
+## � Usage
 
-1. Enter a topic and select your page count.
-2. Let Gemini AI generate your full report.
-3. Edit text, style, layout, and headers live.
-4. Export to **PDF** or **DOCX** — ready to share or print.
+1. **Topic & Settings**: Enter a topic (e.g., "The Future of AI").
+2. **Structure (Optional)**: Paste specific headings you want the report to cover.
+3. **Target Length**: Set the number of pages.
+4. **Mode**: Enable "High-Quality Mode" for deeper research (takes longer).
+5. **Generate**: Click "Generate Report".
+6. **Edit**: Use the floating toolbar to format text, or the sidebar to change global styles.
+7. **Auto-Fit**: If the report is too long/short, use "Auto-Fit" to adjust it to your target page count.
+8. **Export**: Download as **PDF** or **DOCX**.
 
 ---
 
