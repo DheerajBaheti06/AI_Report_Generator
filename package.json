@@ -20,6 +20,13 @@
     "react-dom": "^19.2.0",
     "tailwind-merge": "^3.4.0"
   },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.53.1",
+    "@rollup/rollup-linux-x64-musl": "^4.53.1"
+  },
+  "overrides": {
+    "rollup": "4.53.1"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^22.14.0",
