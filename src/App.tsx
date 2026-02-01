@@ -93,7 +93,7 @@ const App = () => {
   const [isMobileView, setIsMobileView] = React.useState(
     window.innerWidth <= 900,
   );
-  const [theme, setTheme] = React.useState("light");
+  const [theme, setTheme] = React.useState("dark");
   const [isContactPopoverOpen, setIsContactPopoverOpen] = React.useState(false);
   const [cooldownTimer, setCooldownTimer] = React.useState(0); // Rate limit timer in seconds
 
